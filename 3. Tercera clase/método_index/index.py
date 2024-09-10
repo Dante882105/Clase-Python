@@ -143,3 +143,25 @@ mi_set2.discard(1)
 
 union = mi_set.union(mi_set2)
 print(union)
+
+#############################################################################################################################################
+#Clase 9: Booleans
+
+var1 = True
+var2 = False
+
+#print(type(var1),var1)
+
+'''number = 5 > 2+3
+number2 = bool(5<6)
+
+print(type(number), number)
+
+print(number2)'''
+
+lista = [1,2,3,4]
+#control = 5 in lista
+control = 5 not in lista
+
+print(type(control), control)
+#############################################################################################################################################
