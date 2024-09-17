@@ -24,4 +24,5 @@ valor = round(95.66666655485, 2)
 print(valor)
 
 num1 = round(13/2,0)
+
 print(type(num1))
