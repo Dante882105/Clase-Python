@@ -202,11 +202,65 @@ mis_tuples = list(enumerate(lista))
 print(mis_tuples)"""
 ############################################################################################################################################
 #Zip
-
+"""
 nombres = ["Ana", "Hugo", "Valeria"]
 edades = [65,29,42]
 ciudades = ["Lima", "Bogotá", "México"]
 
 combinados = list(zip(nombres, edades, ciudades))
+"""
+#print(combinados)
+##########################################################################################################################
+#Min y Max
+"""
+menor = min(58,96,34,45,50)
+mayor = max(58,96,34,45,50)
+print(menor, mayor)
+"""
+"""
+lista = [58,96,34,45,50]
 
-print(combinados)
+print(f"El mayor es {max(lista)} y el menor es {min(lista)}")
+"""
+#strings con mínimo y máximo
+"""nombres = ['Angel', 'Daniel', 'Marisol', 'Gladys', 'Mireya']
+print(min(nombres))
+
+dic = {'c1': 45, 'c2':11}
+
+print(min(dic.values()))
+"""
+##########################################################################################################################
+#Random
+
+#importar métodos de una libreria
+# from random import randint #Para traer solo el método randint de la librería random
+# from random import * #Para traer todos los métodos de la libreria random
+
+#from random import *
+
+#aleatorio = randint(0, 500) #trae números aleatorios según se le indique
+#aleatorio = round(uniform(0,5),1) #Trae valores aleatrios incluyendo decimales "por eso redondeamos a un solo decimal".
+#aleatorio = random() #Trae un valor aleatorio entre 0 y 1
+"""colores = ['azul', 'rojo', 'amarillo', 'verde'] #Trae un valor random según sea de una variable.
+aleatorio = choice(colores)"""
+"""numeros = list(range(5,50,5)) #Ordena aleatoriamente un elemento según se solicite
+shuffle(numeros)
+
+print(numeros)
+"""
+#########################################################################################################################
+#Comprensión de Listas
+
+palabra = "python"
+
+#lista = [ letra for letra in palabra] #Con una variable
+#lista = [ ff for ff in "python"] #Con el texto Python en lugar de una variable
+#lista = [n/2 for n in range(0, 20, 2)] #operación matemática del la variable n
+#lista = [ n for n in range(0, 20, 2) if n*2>10] #cndicional if
+#lista = [ n if n*2>10 else "no joda" for n in range(0, 20, 2)] #COndicionales if else
+pies = [10, 20, 40, 60, 80, 100]
+
+metros = [ m/3.281 for m in pies]
+
+print(metros)
