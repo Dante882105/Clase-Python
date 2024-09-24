@@ -263,4 +263,61 @@ pies = [10, 20, 40, 60, 80, 100]
 
 metros = [ m/3.281 for m in pies]
 
-print(metros)
+#print(metros)
+
+##########################################################################################################################
+#Actualización 3.10 coincidencias en patrones estructurales Match
+
+serie = "N-02"
+#Anteriormente 3.10 hacia atras
+"""if serie == "N-01":
+    print("samsung")
+elif serie == "N-02":
+    print("Nokia")
+elif serie == "N-03":
+    print("Motorola")
+else:
+    print("NO existe este producto")"""
+#Match
+"""match serie:
+    case "N-01":
+        print("samsung")
+    case "N-02":
+        print("Nokia")
+    case "N-03":
+        print("Motorola")
+    case _: #Utilizado como else
+        print("NO existe este producto")"""
+
+cliente = { "nombre" : "federico",
+            'edad' : 45,
+            "ocupacion": 'Profesor'
+           }
+
+pelicula = { "titulo": "Matrix",
+            "ficha_tecnica": {"Protagonista": "Keanu Reeves",
+                              "Director": "Lana y Lili Wachoski"
+                              }
+            }
+
+elementos = [cliente, pelicula, 'libro']
+
+for e in elementos:
+    match e:
+        case {'nombre': nombre, 
+              'edad': edad,
+              'ocupacion': ocupacion
+              }:
+            print("Es un cliente")
+            print(nombre, edad, ocupacion)
+        case {'titulo': titulo,
+              "ficha_tecnica": {
+                                'Protagonista': Protagonista,
+                                'Director': Director
+                                }
+              }:
+            print('Esto es una Película')
+            print(titulo, Protagonista, Director)
+        case _:
+            print("No se qué es esto")
+
