@@ -28,7 +28,7 @@ proxima_edad = 1 + nueva_edad
 
 proxima_edad = str(proxima_edad)
 
-print("Cumnpliras: " + proxima_edad )
+print("Cumnpliras: " + proxima_edad, type(proxima_edad) )
 
 #Función Format
 

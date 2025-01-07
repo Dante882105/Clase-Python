@@ -135,7 +135,7 @@ for a,b in dic.items():
 #     print(f"Tengo {monedas} monedas")
 #     #monedas = monedas -1
 #     monedas -=1
-# else: print("No tenbgo más monedas")
+# else: print("No tengo más monedas")
 
 respuesta = "s"
 

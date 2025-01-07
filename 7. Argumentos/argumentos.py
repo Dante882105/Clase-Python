@@ -1,4 +1,4 @@
-#Para poder enviar una cantidad no especidicada de argumentos a una función sin definirlos en la misma se usa args y kwargs
+#Para poder enviar una cantidad no especificada de argumentos a una función sin definirlos en la misma se usa args y kwargs
 #1. *args (se puede hacer con cualquier palabra siempre y cuando lleve previamente el asterisco, *gatos, *perros, etc.)
 
 """def suma(a,b):
