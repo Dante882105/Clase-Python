@@ -1,3 +1,5 @@
+
+import re
 '''from random import choice
 
 lista_numeros = [2,3,4,1,4,5]
@@ -28,7 +30,7 @@ def registro_error():
     return data.read()
 
 print(registro_error())'''
-
+'''
 class Personaje:
     flechas = 10
     
@@ -38,4 +40,28 @@ class Personaje:
 
 robin_hood = Personaje()
 
-robin_hood.lanzar_flecha(2)
+robin_hood.lanzar_flecha(2)'''
+
+'''
+def verificar_email(email):
+    patron = r'\w{2,}@\w{5,}.\w{2,3}|w{2,3}.\w{2,3}'
+    buscar = re.search(patron, email)
+    if buscar != None:
+        print("Ok")
+    else:
+        print("La dirección de email es incorrecta")
+
+
+mail = input("ingresa tu email: ")
+verificar_email(mail)'''
+
+def verificar_saludo(frase):
+    patron = r'^Hola'
+    buscar = re.search(patron, frase)
+    print(buscar)
+    if buscar != None:
+        print("Ok")
+    else:
+        print("No has saludado")
+
+verificar_saludo("¿Hola qué tal?")
